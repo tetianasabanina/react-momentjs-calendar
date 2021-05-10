@@ -12,6 +12,6 @@
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  /* font-smoothing: antialiased; */
   -webkit-font-smoothing: antialiased;
+  /* font-smooth: antialiased;   /* Non-standard. Check cross-browser support before using. */
 }
