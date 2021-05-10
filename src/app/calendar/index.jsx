@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import Header from "./header";
 import buildCalendar from './build';
-import dayStyles, { beforeToday } from "./styles";
+import dayStyles from "./styles";
 import "./styles.css";
 
 export default function Calendar({ value, onChange }) {
@@ -19,8 +19,8 @@ export default function Calendar({ value, onChange }) {
 
         <div className="body">
           <div className="day-names">
-            {["m", "t", "w", "t", "f", "sa", "su"].map((d) => (
-              <div className="week">{d}</div>
+            {["m", "t", "w", "t", "f", "sa", "su"].map((d, di) => (
+              <div className="week" key={di}>{d}</div>
             ))}
           </div>
           {calendar.map((week, wi) => (

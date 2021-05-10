@@ -13,6 +13,28 @@
   color: var(--black);
   font-family: var(--font-book);
   font-weight: 700;
+  /* display: flex; */
+}
+
+.calendar .year {
+  /* background-color: var(--light-blue); */
+  text-align: center;
+  min-height: 2rem;
+  line-height: 2rem;
+  color: var(--black);
+  font-family: var(--font-book);
+  font-weight: 700;
+  display: flex;
+}
+
+.calendar .month {
+  /* background-color: var(--light-blue); */
+  text-align: center;
+  min-height: 2rem;
+  line-height: 2rem;
+  color: var(--black);
+  font-family: var(--font-book);
+  font-weight: 700;
   display: flex;
 }
 
